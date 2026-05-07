@@ -1,39 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Anan Saha</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 30px 22px;
+      background: white;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 20px;
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 0 0 8px 0;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      margin: 0;
+      color: #444;
+    }
+
+    nav {
+      margin-top: 22px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3b2f8f;
+      font-weight: bold;
+      margin-right: 22px;
+      font-size: 17px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      font-size: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    p, li {
+      font-size: 18px;
+      max-width: 850px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    .paper {
+      margin-bottom: 24px;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .paper-status {
+      color: #555;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      p, li {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <main class="container">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="misc.html">Misc</a>
-    </nav>
+  <div class="container">
 
-    <h1>Research</h1>
+    <header>
+      <h1>Anan Saha</h1>
+      <p class="subtitle">
+        PhD Student, Department of Mathematics, Louisiana State University
+      </p>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="misc.html">Misc</a>
+      </nav>
+    </header>
 
     <section>
-      <h2>Research Interests</h2>
+      <h2>Research</h2>
+
       <p>
-        My current work focuses on statistical inference for stochastic
-        differential equations with averaged or integral drift structures,
-        where the effective drift depends on an unknown latent distribution.
+        My research focuses on statistical inference for stochastic differential
+        equations, with particular emphasis on multiscale systems, stochastic
+        averaging, Bayesian inference, and machine-learning-based methods for
+        learning effective dynamics.
+      </p>
+
+      <p>
+        I am especially interested in inverse problems where the observed slow
+        dynamics are governed by an averaged or integral drift depending on an
+        unknown latent distribution.
       </p>
     </section>
 
     <section>
-      <h2>Current Projects</h2>
+      <h2>Research Interests</h2>
+
       <ul>
-        <li>Bayesian inference for SDEs with integral drift</li>
-        <li>Normalizing flows for latent distribution learning</li>
-        <li>Stochastic averaging and effective dynamics</li>
+        <li>Stochastic differential equations</li>
+        <li>Stochastic averaging and multiscale dynamics</li>
+        <li>Bayesian inference for dynamical systems</li>
+        <li>Normalizing flows and variational inference</li>
+        <li>Machine learning methods for stochastic models</li>
       </ul>
     </section>
-  </main>
+
+    <section>
+      <h2>Current Projects</h2>
+
+      <div class="paper">
+        <p class="paper-title">
+          Bayesian Normalizing Flows for Learning SDEs with Integral Drift
+        </p>
+        <p class="paper-status">
+          Manuscript in preparation.
+        </p>
+        <p>
+          This project develops a Bayesian variational framework using
+          normalizing flows to learn averaged drift functions in stochastic
+          differential equations with latent integral structure.
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">
+          Neural Reversible-Jump MCMC for Integral-Drift Stochastic Differential Equations
+        </p>
+        <p class="paper-status">
+          Manuscript in preparation.
+        </p>
+        <p>
+          This project studies Bayesian nonparametric inference for integral-drift
+          stochastic differential equations using random discrete measures and
+          reversible-jump Markov chain Monte Carlo methods.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Last updated: May 2026
+    </footer>
+
+  </div>
 </body>
 </html>
