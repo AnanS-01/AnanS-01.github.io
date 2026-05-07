@@ -1,85 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Anan Saha</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 850px;
-      margin: 60px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      margin-bottom: 5px;
-      font-size: 38px;
-    }
-
-    h2 {
-      margin-top: 35px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-      font-size: 24px;
-    }
-
-    .subtitle {
-      color: #555;
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="misc.html">Misc</a>
+    </nav>
+
     <h1>Anan Saha</h1>
     <p class="subtitle">PhD Student, Department of Mathematics, Louisiana State University</p>
 
-    <h2>About</h2>
-    <p>
-      I am a graduate student in mathematics at Louisiana State University.
-      My research interests include stochastic differential equations,
-      Bayesian inference, stochastic averaging, and machine learning methods
-      for dynamical systems.
-    </p>
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a graduate student in mathematics at Louisiana State University.
+        My research interests include stochastic differential equations,
+        Bayesian inference, stochastic averaging, and machine learning methods
+        for dynamical systems.
+      </p>
+    </section>
 
-    <h2>Research</h2>
-    <p>
-      My current work focuses on statistical inference for SDEs with averaged
-      or integral drift structures, where the effective drift depends on an
-      unknown latent distribution.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:asaha9@lsu.edu">asaha9@lsu.edu</a>
-    </p>
-  </div>
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:asaha9@lsu.edu">asaha9@lsu.edu</a></p>
+    </section>
+  </main>
 </body>
 </html>
