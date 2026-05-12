@@ -120,6 +120,30 @@
   text-decoration: none;
 }
 
+    .paper-list {
+  list-style-type: square;
+  padding-left: 24px;
+  margin-top: 8px;
+}
+
+.paper-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  max-width: 900px;
+}
+
+.paper-list a {
+  color: #3b2f8f;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.paper-list a:hover {
+  text-decoration: underline;
+}
+
 .paper-link a:hover {
   text-decoration: underline;
 }
@@ -200,35 +224,27 @@
     </section>
 
 
-    <section>
-      <h3>Preprints and Submitted Papers</h3>
+   <section>
+  <h3>Preprints and Submitted Papers</h3>
 
-<div class="paper">
-  <p class="paper-title">
-    Learning multiscale stochastic models through normalizing flows.
-  </p>
+  <ul class="paper-list">
+    <li>
+      <strong>Learning multiscale stochastic models through normalizing flows.</strong>
+      Anan Saha and Arnab Ganguly.
+      <em>Submitted, under review.</em>
+      <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener noreferrer">arXiv</a>
+    </li>
+  </ul>
 
-  <p class="paper-authors">
-    Anan Saha and Arnab Ganguly
-  </p>
-
-  <p class="paper-status">
-  Submitted, under review.
-  <span class="paper-link">
-    <a href="http://arxiv.org/abs/2605.09718" target="_blank" rel="noopener noreferrer">arXiv</a>
-  </span>
-</p>
-</div>
   <h3>Working Papers</h3>
-      <div class="paper">
-        <p class="paper-title">
-          Neural Reversible-Jump MCMC for Integral-Drift Stochastic Differential Equations
-        </p>
-        <p class="paper-status">
-          Manuscript in preparation.
-        </p>
-      </div>
-    </section>
+
+  <ul class="paper-list">
+    <li>
+      <strong>Neural Reversible-Jump MCMC for Integral-Drift Stochastic Differential Equations.</strong>
+      <em>Manuscript in preparation.</em>
+    </li>
+  </ul>
+</section>
 
     <footer>
       Last updated: May 2026
